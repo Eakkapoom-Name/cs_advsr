@@ -406,11 +406,11 @@ def main():
     with header_col2:
         st.markdown("""
         <div style="text-align: center;">
-            <h1 class="gradient-title" style="font-size: 3.5em; line-height: 0.5; font-weight: 700;">
-                Courses Advisor
+            <h1 class="gradient-title" style="font-size: 3.75em; line-height: 1; font-weight: 700;">
+                 🔹 Courses Advisor 🔹
             </h1>
-            <p class="subtitle" style="font-size: 1.5em; font-weight: 600;">
-                This is a RAG-powered Courses Adviser for CS CMU projects.
+            <p class="subtitle" style="font-size: 1.25em; font-weight: 600;">
+                RAG-powered Courses Advisor for CS CMU
             </p>
         </div>
         """, unsafe_allow_html=True)
@@ -499,7 +499,7 @@ def main():
         with st.chat_message("user", avatar="png/avatar_user.png"):
             st.markdown(q)
         with st.chat_message("assistant", avatar="png/avatar_bot.png"):
-            with st.spinner("Processing..."):
+            with st.spinner("Thinking..."):
                 if is_topic_tool_intent(q):
                     ans = answer_general_with_tools(q, "search_courses_by_topic")
 
@@ -524,7 +524,7 @@ def main():
     # Example
     cA, cB, cC = st.columns(3)
     with cA:
-        button_A = st.button("วิชาที่เกี่ยวกับ AI")
+        button_A = st.button("วิชาบังคับของปี 3 เทอม 1 มีอะไรบ้าง")
 
     with cB:
         button_B = st.button("วิชาใดบ้างที่เป็นตัวต่อของ 204252")
@@ -537,12 +537,12 @@ def main():
             mime="text/csv"
         )
     if button_A:
-        q = "วิชาที่เกี่ยวกับ AI"
+        q = "วิชาบังคับของปี 3 เทอม 1 มีอะไรบ้าง"
         st.session_state.messages.append({"role": "user", "content": q, "avatar": "png/avatar_user.png"})
         with st.chat_message("user", avatar="png/avatar_user.png"):
             st.markdown(q)
         with st.chat_message("assistant", avatar="png/avatar_bot.png"):
-            with st.spinner("Processing..."):
+            with st.spinner("Thinking..."):
                 if is_topic_tool_intent(q):
                     ans = answer_general_with_tools(q, "search_courses_by_topic")
 
@@ -563,7 +563,7 @@ def main():
         with st.chat_message("user", avatar="png/avatar_user.png"):
             st.markdown(q)
         with st.chat_message("assistant", avatar="png/avatar_bot.png"):
-            with st.spinner("Processing..."):
+            with st.spinner("Thinking..."):
                 if is_topic_tool_intent(q):
                     ans = answer_general_with_tools(q, "search_courses_by_topic")
 
