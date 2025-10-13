@@ -1,2 +1,2 @@
-# dawg_sheet
-for cs wanna be road map
+# Course Advisor
+This is a RAG-powered Courses Adviser for CS CMU projects.
