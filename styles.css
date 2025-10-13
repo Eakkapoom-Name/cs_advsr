@@ -15,9 +15,9 @@
 
   /*สี*/
   --c-primary: #8CECFF;
-  --c-accent: #0000C4;
+  --c-accent: #0a2054;
   --c-bg: #0B0031;
-  --c-bg-2: #090979;
+  --c-bg-2: #0c2767;
   --c-text: #FFFFFF;
 
   /*เงาเรืองแสง*/
@@ -35,27 +35,27 @@
   height: 100vh;
   width: 100vw;
   overflow: hidden;
-  background: linear-gradient(8deg,rgba(2, 0, 36, 1) 20%, rgba(9, 9, 121, 1) 50%, rgba(140, 236, 255, 1) 100%);
+  background: linear-gradient(8deg,rgba(2, 0, 36, 1) 20%, rgb(10, 32, 84) 65%, rgba(140, 236, 255, 1) 100%);
   background-size: 150% 150%;
   background-position: 0% 50%;
   background-attachment: fixed;
 }
 /*slidebarแก้แล้ว*/
 [data-testid="stSidebar"] {
-  background: linear-gradient(8deg,rgba(2, 0, 36, 1) 20%, rgba(9, 9, 121, 1) 50%, rgba(140, 236, 255, 1) 250%);
+  background: linear-gradient(8deg,rgba(2, 0, 36, 1) 20%, rgb(10, 32, 84) 65%, rgba(140, 236, 255, 1) 250%);
   background-size: 0% 50%;
   color: #ffffff !important;
   border-top: 2px solid rgba(140, 236, 255, 0.25); /*ขอบบน*/
   border-right: 2px solid rgba(140, 236, 255, 0.25); /*ขอบขวา*/
-  border-bottom: 2px solid rgba(9, 9, 121, 1); /*ขอบล่าง*/
+  border-bottom: 2px solid rgb(10, 32, 84); /*ขอบล่าง*/
   border-left: none; /* ขอบซ้าย */
   border-radius: 0px 16px 16px 0px;  /* ขอบโค้ง */
   margin: 10px;
   padding: 16px;
-  box-shadow: 4px -1px 7px rgba(140, 236, 255, 1);
+  box-shadow: 3px -1px 7px rgba(140, 236, 255, 1);
   /* อนิเมชั่น */
   opacity: 3;/*เฟด*/
-  transition: all 0.8s cubic-bezier(0.5, 0, 0.5, 1);/*เวลาเข้า-ออก*/
+  transition: all 0.5s cubic-bezier(0.25, 0, 0.25, 0.8);/*เวลาเข้า-ออก*/
 }
 
 /*headercolor*/
@@ -70,25 +70,25 @@ div[data-testid="stVerticalBlock"] [data-testid="stChatInput"] > div:first-child
 }
 /*กล่องโมเดลแก้แล้ว*/
 .stSelectbox div[data-baseweb="select"] {
-  background: rgba(9, 9, 121, 1) !important;
+  background: rgb(10, 32, 84) !important;
   color: #ffffff !important;
-  border: 1px solid #0000C4 !important;
+  border: 1px solid #0c2767 !important;
   box-shadow: 0 3px 6px #8cecff !important;
   border-radius: 10px;
   color: #ffffff !important;
 }
 div[data-baseweb="select"]  > :hover,
 div[data-baseweb="select"] > button:hover {
-  background: #0000C4 !important;
+  background: #0c2767 !important;
   box-shadow:
-    0 0 15px #8CECFF,
-    0 0 15px rgba(140, 236, 255, 0.6),
-    0 0 20px rgba(140, 236, 255, 0.3) !important;
+    0 0 10px #8CECFF,
+    0 0 10px rgba(140, 236, 255, 0.6),
+    0 0 15px rgba(140, 236, 255, 0.3) !important;
   transform: translateY(-1px);
 }
 
 main {
-  background: linear-gradient(180deg, rgba(2, 0, 36, 0.4), rgba(9, 9, 121, 0.4));
+  background: linear-gradient(180deg, rgba(2, 0, 36, 0.4), rgb(10, 32, 84));
   color: #ffffff;
   border: 1px solid rgba(140, 236, 255, 0.25);
   border-radius: 12px;
@@ -97,8 +97,8 @@ main {
 }
 /*กล่องข้อมูลในตาราง*/
 div[data-testid="stDataFrame"] {
-  background: rgba(9, 9, 121, 0.95) !important;
-  border: 1px solid #0000C4 !important;
+  background: rgb(10, 32, 84) !important;
+  border: 1px solid #0c2767 !important;
   border-radius: 12px !important;
   box-shadow: 0 3px 6px rgba(140, 236, 255, 1) !important;
   color: #ffffff !important;
@@ -106,18 +106,18 @@ div[data-testid="stDataFrame"] {
 }
 div[data-testid="stDataFrame"] > :hover,
 div[data-testid="stDataFrame"] > button:hover {
-  background: #0000C4 !important;
+  background: #0c2767 !important;
   box-shadow:
-    0 0 15px #8CECFF,
-    0 0 15px rgba(140, 236, 255, 0.6),
-    0 0 20px rgba(140, 236, 255, 0.3) !important;
+    0 0 10px #8CECFF,
+    0 0 10px rgba(140, 236, 255, 0.6),
+    0 0 15px rgba(140, 236, 255, 0.3) !important;
   transform: translateY(-1px);
 }
 
 /* ตารางหลังกรอง */
 [data-testid="stExpander"]{
-  background: rgba(9, 9, 121, 0.95) !important;
-  border: 1px solid #0000C4 !important;
+  background: rgb(10, 32, 84) !important;
+  border: 1px solid #0c2767 !important;
   border-radius: 12px !important;
   box-shadow: 0 3px 6px rgba(140, 236, 255, 1) !important;
   color: #ffffff !important;
@@ -125,7 +125,7 @@ div[data-testid="stDataFrame"] > button:hover {
 }
 [data-testid="stExpander"] > summary{
   list-style: none;
-  background: #0000C4 !important;
+  background: #0c2767 !important;
   color: #ffffff !important;
   border-bottom: 1px solid rgba(140,236,255,.25);
   padding: 10px 14px;
@@ -136,23 +136,23 @@ div[data-testid="stDataFrame"] > button:hover {
 }
 [data-testid="stExpander"]:hover,
 [data-testid="stExpander"] > summary:hover{
-  background: #0000C4 !important;
+  background: #0c2767 !important;
   box-shadow:
-    0 0 15px #8CECFF,
-    0 0 15px rgba(140, 236, 255, 0.6),
-    0 0 20px rgba(140, 236, 255, 0.3) !important;
+    0 0 10px #8CECFF,
+    0 0 10px rgba(140, 236, 255, 0.6),
+    0 0 15px rgba(140, 236, 255, 0.3) !important;
   transform: translateY(-1px);
 }
 
 /* พื้นหลัง' */
 div[data-testid="stDataFrame"] div[role="grid"] {
-  background-color: rgba(9, 9, 121, 0.98) !important;
+  background-color: rgb(10, 32, 84) !important;
   color: #ffffff !important;
 }
 
 /* หัวคอลัมน์ */
 div[data-testid="stDataFrame"] div[role="grid"] [role="columnheader"] {
-  background-color: #0000C4 !important;
+  background-color: #0c2767 !important;
   color: #ffffff !important;
   border-bottom: 1px solid #8CECFF !important;
   font-weight: 700 !important;
@@ -160,14 +160,14 @@ div[data-testid="stDataFrame"] div[role="grid"] [role="columnheader"] {
 
 /* เซลล์ข้อมูล */
 div[data-testid="stDataFrame"] div[role="grid"] [role="gridcell"] {
-  background-color: rgba(9, 9, 121, 0.95) !important;
+  background-color: rgb(10, 32, 84) !important;
   color: #ffffff !important;
   border-bottom: 1px solid rgba(140, 236, 255, 0.12) !important;
 }
 
 /* แถบเลื่อนของตาราง */
 div[data-testid="stDataFrame"] ::-webkit-scrollbar-thumb {
-  background: #0000C4 !important;
+  background: #0c2767 !important;
   box-shadow:
     0 0 12px #8CECFF,
     0 0 24px rgba(140, 236, 255, 0.6),
@@ -177,7 +177,7 @@ div[data-testid="stDataFrame"] ::-webkit-scrollbar-thumb {
 /*ปุ่มกด*/
 div[data-testid="stButton"] > button,
 div[data-testid="stDownloadButton"] > button {
-  background: rgba(9, 9, 121, 1) !important;
+  background: rgb(10, 32, 84) !important;
   color: #ffffff !important;
   border: 1px solid rgba(9, 9, 121, 1)!important;
   box-shadow: 0 3px 6px rgba(140, 236, 255, 1) !important;
@@ -187,11 +187,11 @@ div[data-testid="stDownloadButton"] > button {
 /*เอฟเฟคปุ่ม*/
 div[data-testid="stButton"] > button:hover,
 div[data-testid="stDownloadButton"] > button:hover {
-  background: #0000C4 !important;
+  background: #0c2767 !important;
   box-shadow:
-    0 0 15px #8CECFF,
-    0 0 15px rgba(140, 236, 255, 0.6),
-    0 0 20px rgba(140, 236, 255, 0.3) !important;
+    0 0 10px #8CECFF,
+    0 0 10px rgba(140, 236, 255, 0.6),
+    0 0 15px rgba(140, 236, 255, 0.3) !important;
   transform: translateY(-1px);
 }
 
