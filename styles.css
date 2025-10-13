@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Kodchasan:wght@300;400;500;600;700&display=swap');
+
+@keyframes gradientWave {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes shine {
+  to { background-position: 200% center; }
+}
+
+:root{
+  --font-ui: "Kodchasan", "Noto Sans Thai", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+
+  /*สี*/
+  --c-primary: #8CECFF;
+  --c-accent: #0000C4;
+  --c-bg: #0B0031;
+  --c-bg-2: #090979;
+  --c-text: #FFFFFF;
+
+  /*เงาเรืองแสง*/
+  --glow: 0 0 12px var(--c-primary), 0 0 24px rgba(140,236,255,.55), 0 0 32px rgba(140,236,255,.28);
+}
+
+/*ฟอนต์*/
+.stApp, body {
+  font-family: var(--font-ui);
+  color: var(--c-text);
+}
+
+/*พื้นหลังห้ามแก้*/
+.stApp {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background: linear-gradient(8deg,rgba(2, 0, 36, 1) 20%, rgba(9, 9, 121, 1) 50%, rgba(140, 236, 255, 1) 100%);
+  background-size: 150% 150%;
+  background-position: 0% 50%;
+  background-attachment: fixed;
+}
+/*slidebarแก้แล้ว*/
+[data-testid="stSidebar"] {
+  background: linear-gradient(8deg,rgba(2, 0, 36, 1) 20%, rgba(9, 9, 121, 1) 50%, rgba(140, 236, 255, 1) 250%);
+  background-size: 0% 50%;
+  color: #ffffff !important;
+  border-top: 2px solid rgba(140, 236, 255, 0.25); /*ขอบบน*/
+  border-right: 2px solid rgba(140, 236, 255, 0.25); /*ขอบขวา*/
+  border-bottom: 2px solid rgba(9, 9, 121, 1); /*ขอบล่าง*/
+  border-left: none; /* ขอบซ้าย */
+  border-radius: 0px 16px 16px 0px;  /* ขอบโค้ง */
+  margin: 10px;
+  padding: 16px;
+  box-shadow: 4px -1px 7px rgba(140, 236, 255, 1);
+  /* อนิเมชั่น */
+  opacity: 3;/*เฟด*/
+  transition: all 0.8s cubic-bezier(0.5, 0, 0.5, 1);/*เวลาเข้า-ออก*/
+}
+
+/*headercolor*/
+[data-testid="stHeader"],
+[data-testid="stToolbar"],
+.stApp > header {
+  background-color: transparent !important;
+}
+
+div[data-testid="stVerticalBlock"] [data-testid="stChatInput"] > div:first-child {
+  border-radius: 12px !important;
+}
+/*กล่องโมเดลแก้แล้ว*/
+.stSelectbox div[data-baseweb="select"] {
+  background: rgba(9, 9, 121, 1) !important;
+  color: #ffffff !important;
+  border: 1px solid #0000C4 !important;
+  box-shadow: 0 3px 6px #8cecff !important;
+  border-radius: 10px;
+  color: #ffffff !important;
+}
+div[data-baseweb="select"]  > :hover,
+div[data-baseweb="select"] > button:hover {
+  background: #0000C4 !important;
+  box-shadow:
+    0 0 15px #8CECFF,
+    0 0 15px rgba(140, 236, 255, 0.6),
+    0 0 20px rgba(140, 236, 255, 0.3) !important;
+  transform: translateY(-1px);
+}
+
+main {
+  background: linear-gradient(180deg, rgba(2, 0, 36, 0.4), rgba(9, 9, 121, 0.4));
+  color: #ffffff;
+  border: 1px solid rgba(140, 236, 255, 0.25);
+  border-radius: 12px;
+  box-shadow: 0 3px 6px rgba(140, 236, 255, 1) !important;
+  padding: 24px;
+}
+/*กล่องข้อมูลในตาราง*/
+div[data-testid="stDataFrame"] {
+  background: rgba(9, 9, 121, 0.95) !important;
+  border: 1px solid #0000C4 !important;
+  border-radius: 12px !important;
+  box-shadow: 0 3px 6px rgba(140, 236, 255, 1) !important;
+  color: #ffffff !important;
+  transition: background .3s, box-shadow .3s, transform .1s;
+}
+div[data-testid="stDataFrame"] > :hover,
+div[data-testid="stDataFrame"] > button:hover {
+  background: #0000C4 !important;
+  box-shadow:
+    0 0 15px #8CECFF,
+    0 0 15px rgba(140, 236, 255, 0.6),
+    0 0 20px rgba(140, 236, 255, 0.3) !important;
+  transform: translateY(-1px);
+}
+
+/* ตารางหลังกรอง */
+[data-testid="stExpander"]{
+  background: rgba(9, 9, 121, 0.95) !important;
+  border: 1px solid #0000C4 !important;
+  border-radius: 12px !important;
+  box-shadow: 0 3px 6px rgba(140, 236, 255, 1) !important;
+  color: #ffffff !important;
+  transition: background .3s, box-shadow .3s, transform .1s;
+}
+[data-testid="stExpander"] > summary{
+  list-style: none;
+  background: #0000C4 !important;
+  color: #ffffff !important;
+  border-bottom: 1px solid rgba(140,236,255,.25);
+  padding: 10px 14px;
+  margin: 0;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background .3s, box-shadow .3s, transform .1s;
+}
+[data-testid="stExpander"]:hover,
+[data-testid="stExpander"] > summary:hover{
+  background: #0000C4 !important;
+  box-shadow:
+    0 0 15px #8CECFF,
+    0 0 15px rgba(140, 236, 255, 0.6),
+    0 0 20px rgba(140, 236, 255, 0.3) !important;
+  transform: translateY(-1px);
+}
+
+/* พื้นหลัง' */
+div[data-testid="stDataFrame"] div[role="grid"] {
+  background-color: rgba(9, 9, 121, 0.98) !important;
+  color: #ffffff !important;
+}
+
+/* หัวคอลัมน์ */
+div[data-testid="stDataFrame"] div[role="grid"] [role="columnheader"] {
+  background-color: #0000C4 !important;
+  color: #ffffff !important;
+  border-bottom: 1px solid #8CECFF !important;
+  font-weight: 700 !important;
+}
+
+/* เซลล์ข้อมูล */
+div[data-testid="stDataFrame"] div[role="grid"] [role="gridcell"] {
+  background-color: rgba(9, 9, 121, 0.95) !important;
+  color: #ffffff !important;
+  border-bottom: 1px solid rgba(140, 236, 255, 0.12) !important;
+}
+
+/* แถบเลื่อนของตาราง */
+div[data-testid="stDataFrame"] ::-webkit-scrollbar-thumb {
+  background: #0000C4 !important;
+  box-shadow:
+    0 0 12px #8CECFF,
+    0 0 24px rgba(140, 236, 255, 0.6),
+    0 0 32px rgba(140, 236, 255, 0.3) !important;
+}
+
+/*ปุ่มกด*/
+div[data-testid="stButton"] > button,
+div[data-testid="stDownloadButton"] > button {
+  background: rgba(9, 9, 121, 1) !important;
+  color: #ffffff !important;
+  border: 1px solid rgba(9, 9, 121, 1)!important;
+  box-shadow: 0 3px 6px rgba(140, 236, 255, 1) !important;
+  transition: background 0.3s, transform 0.1s;
+}
+
+/*เอฟเฟคปุ่ม*/
+div[data-testid="stButton"] > button:hover,
+div[data-testid="stDownloadButton"] > button:hover {
+  background: #0000C4 !important;
+  box-shadow:
+    0 0 15px #8CECFF,
+    0 0 15px rgba(140, 236, 255, 0.6),
+    0 0 20px rgba(140, 236, 255, 0.3) !important;
+  transform: translateY(-1px);
+}
+
+/*หัวข้อห้ามแก้*/
+.gradient-title {
+  font-size: 3.5em;
+  text-align: center;
+  background: linear-gradient(90deg, #ffffff, #57e3ff);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 1000;
+  text-shadow: 0 1 8px rgba(255, 255, 255, 0.2);
+  margin-bottom: 0.3em;
+  animation: shine 4s linear infinite;
+}
+/*หัวข้อรอง*/
+.subtitle {
+  text-align: center;
+  color: #e0e0e0;
+  font-size: 1.5em;}
