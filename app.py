@@ -246,7 +246,7 @@ def execute_tool_call(tool_name: str, arguments: dict):
     return f"ไม่รู้จัก tool: {tool_name}"
 
 
-def answer_general_with_tools(question: str, tool_name: str) -> str:
+def answer_general_with_tools(question: str, tool_name: str = "") -> str:
     """Answer with tool calling support"""
     tools = get_tools_definition()
     sys = system_prompt_th()
