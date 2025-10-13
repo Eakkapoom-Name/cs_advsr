@@ -1,2 +1,2 @@
 # Course Advisor
-This is a RAG-powered Courses Adviser for CS CMU projects.
+RAG-powered Courses Adviser for CS CMU
