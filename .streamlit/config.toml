@@ -1,7 +1,7 @@
 [theme]
 base="dark"
 primaryColor="#8CECFF"
-backgroundColor="#00072498"
+backgroundColor="#000724b4"
 secondaryBackgroundColor="#0a2054ff"
 textColor="#FFFFFF"
 font = "Kodchasan:https://fonts.googleapis.com/css2?family=Kodchasan:wght@200;300;400;500;600;700&display=swap, sans-serif"
