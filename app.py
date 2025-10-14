@@ -407,7 +407,7 @@ def main():
         st.markdown("""
         <div style="text-align: center;">
             <h1 class="gradient-title" style="font-size: 3.75em; line-height: 1; font-weight: 700;">
-                 🔹 Courses Advisor 🔹
+                🔹 Courses Advisor 🔹
             </h1>
             <p class="subtitle" style="font-size: 1.25em; font-weight: 600;">
                 RAG-powered Courses Advisor for CS CMU
