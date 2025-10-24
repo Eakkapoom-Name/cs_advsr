@@ -1,4 +1,4 @@
-# Course Advisor
+# 🎓 Course Advisor
 
 ## RAG-powered Courses Advisor for CS CMU
 
