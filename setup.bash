@@ -24,6 +24,7 @@ echo "✅ pip found"
 # Check if virtual environment is created
 echo ""
 echo "📦 Checking virtual environment..."
+
 VENV_DIR=".venv"
 ACTIVATE_PATH="$VENV_DIR/bin/activate"
 
@@ -31,6 +32,9 @@ ACTIVATE_PATH="$VENV_DIR/bin/activate"
 if [ ! -d "$VENV_DIR" ]; then
     echo "📝 Creating .venv"
     python3 -m venv "$VENV_DIR" || { echo "❌ Failed to create .venv"; exit 1; }
+    echo "✅ Virtual environment created successfully"
+else
+    echo "✅ Virtual environment already exists"
 fi
 
 # Figure out the absolute path to the expected venv
@@ -38,15 +42,13 @@ EXPECTED_VENV_PATH="$(cd "$VENV_DIR" && pwd 2>/dev/null)"
 
 # If the correct venv is already active, do nothing; otherwise, activate it
 if [ -n "$VIRTUAL_ENV" ] && [ "$VIRTUAL_ENV" = "$EXPECTED_VENV_PATH" ]; then
-    echo "✅ .venv already active"
+    pass
 else
     if [ -f "$ACTIVATE_PATH" ]; then
-        echo "🔓 Activating .venv"
         # shellcheck disable=SC1091
         source "$ACTIVATE_PATH"
-        echo "✅ Activated .venv"
     else
-        echo "❌ Activation script not found"
+        echo "❌ Virtual enviornment activation script not found"
         exit 1
     fi
 fi
