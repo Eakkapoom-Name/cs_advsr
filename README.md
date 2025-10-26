@@ -8,15 +8,11 @@ Course Advisor is an AI assistant that helps Computer Science students discover 
 - **How it works (LLM Techniques):** builds a structured table from the official curriculum, course descriptions, and study plan, and uses an LLM with **RAG**, **Function Calling**, and careful **Prompt Design** to retrieve the right facts and answer questions accurately.  
 - **Examples you can ask:** “What is covered in *Data Structures*?” or “Which compulsory courses are required in Year 3?”
 
-> Source: summarized from *presentation.pdf* (Pain Points, Solution, and LLM Technique slides).
-
-## Team & Roles
+## Members & Roles
 - **Eakkapoom Mapeng (686)** — Prompt design; debugging (backend); backend ↔ frontend integration.  
 - **Komphon Burutsri (691)** — RAG implementation; function calls.  
 - **Jakkarin Haisok (693)** — UX design; debugging (frontend); frontend ↔ backend integration.  
 - **Natthanicha Sompao (705)** — Data collection; UI design.  
-
-> Source: *presentation.pdf* (Members & Roles slide).
 
 ## 3. Setup
 
