@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# CS203 W12 Lab - LLM Chat Demo Setup Script
+# Setup
 
 echo "⌛️ Setting up in progress..."
 echo "=========================================="
