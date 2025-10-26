@@ -1,6 +1,6 @@
 # 🎓 Course Advisor
 
-Waiting for more informations.
----
+## Waiting for more informations.
 
+---
 Working in progress...
