@@ -20,9 +20,11 @@ if ! command -v pip &> /dev/null; then
 fi
 
 echo "✅ pip found"
+echo ""
 
 # Install requirements
 echo "⚙️ Installing requirements..."
+
 pip install -r requirements.txt
 
 if [ $? -eq 0 ]; then
@@ -43,5 +45,4 @@ fi
 
 echo ""
 echo "🎉 Setup complete!"
-echo ""
-echo "You can continue to the next step in README.md"
+echo "📝 You can continue to the next step in README.md"
