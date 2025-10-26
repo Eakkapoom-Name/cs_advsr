@@ -1,6 +1,6 @@
 # 🎓 Course Advisor
 
-Course Advisor is an AI assistant that helps Computer Science students discover and plan courses. It centralizes curriculum knowledge and answers planning questions so students can make confident, up‑to‑date decisions. (Derived from *presentation.pdf*.)
+Course Advisor is an AI assistant that helps Computer Science students discover and plan courses. It centralizes curriculum knowledge and answers planning questions so students can make confident, up‑to‑date decisions.
 
 ## Overview
 - **What it is:** an AI helper that recommends and explains courses for Computer Science students.  
