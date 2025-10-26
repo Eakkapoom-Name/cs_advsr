@@ -48,6 +48,3 @@ source .venv/bin/activate
 ```bash
 streamlit run app.py
 ```
-
-## References
-- Project slides: **presentation.pdf** (Pain Points, Solution, LLM Technique, System Architecture, Members & Roles)
