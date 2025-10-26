@@ -15,4 +15,4 @@
 <img width="1920" height="1080" alt="5" src="https://github.com/user-attachments/assets/787c53c3-d869-4f72-8498-c3711a0aa56e" />
 
 ---
-<img width="1920" height="1080" alt="6" src="https://github.com/user-attachments/assets/06f6a150-03e1-489b-a9c9-2f12b0797a27" />
+<img width="1920" height="1080" alt="Courses Advisor 204203 Proj" src="https://github.com/user-attachments/assets/8171a431-cbdf-482c-9f17-abe5ad5b466c" />
